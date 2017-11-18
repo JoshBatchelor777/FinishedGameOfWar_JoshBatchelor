@@ -1,0 +1,9 @@
+C:\Users\Student\Desktop\TechAcademy\C#\PROJECTS\WarGame\WarGame\bin\Debug\WarGame.exe.config
+C:\Users\Student\Desktop\TechAcademy\C#\PROJECTS\WarGame\WarGame\bin\Debug\WarGame.exe
+C:\Users\Student\Desktop\TechAcademy\C#\PROJECTS\WarGame\WarGame\bin\Debug\WarGame.pdb
+C:\Users\Student\Desktop\TechAcademy\C#\PROJECTS\WarGame\WarGame\obj\Debug\WarGame.csprojResolveAssemblyReference.cache
+C:\Users\Student\Desktop\TechAcademy\C#\PROJECTS\WarGame\WarGame\obj\Debug\WarGame.Game_Form.resources
+C:\Users\Student\Desktop\TechAcademy\C#\PROJECTS\WarGame\WarGame\obj\Debug\WarGame.Properties.Resources.resources
+C:\Users\Student\Desktop\TechAcademy\C#\PROJECTS\WarGame\WarGame\obj\Debug\WarGame.csproj.GenerateResource.Cache
+C:\Users\Student\Desktop\TechAcademy\C#\PROJECTS\WarGame\WarGame\obj\Debug\WarGame.exe
+C:\Users\Student\Desktop\TechAcademy\C#\PROJECTS\WarGame\WarGame\obj\Debug\WarGame.pdb
