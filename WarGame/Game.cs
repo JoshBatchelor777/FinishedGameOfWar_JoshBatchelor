@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,11 +20,11 @@ namespace WarGame
         // Game constructor.
         // Every game has 2 players.
 
-        public Game(string player1Name, string player2Name)
+        public Game(string player1Name, Color p1NameColor, string player2Name, Color p2NameColor)
         {
-            _player1 = new Player() { Name = player1Name };
+            _player1 = new Player() { Name = player1Name, NameColor = p1NameColor};
             _player1.PlayerScore = _player1.Cards.Count;
-            _player2 = new Player() { Name = player2Name };
+            _player2 = new Player() { Name = player2Name, NameColor = p2NameColor };
             _player2.PlayerScore = _player2.Cards.Count;
         }
 

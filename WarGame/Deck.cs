@@ -51,7 +51,7 @@ namespace WarGame
         }
 
 
-        public bool didDealHappen = false;
+        public bool didDealHappen = true;
 
         // Deal cards function to be called by "Deal" button.
         // A deal function should deal to players, so pass 2 instances of a Player.
@@ -69,8 +69,9 @@ namespace WarGame
             }
             didDealHappen = true;
             return _sb.ToString();
-        } 
+        }
 
+        
 
         // A player should recieve a card, so make new instance of a Player.
         // And cards are being dealed so make new instance of Card.
@@ -90,7 +91,13 @@ namespace WarGame
             // Every time a card is added, print the suit and kind and who has the card.
             // Using a string builder saves me from having to tell this class what each
             // Label is.
-            _sb.Append(player.Name + " has the " + card.Kind + " of " + card.Suit + "\n");
+            // + " has the " + card.Kind + " of " + card.Suit + "\n");
+            _sb.Append(player.Name);  
+            _sb.Append(" has the ");
+            _sb.Append(card.Kind);
+            _sb.Append(" of ");
+            _sb.Append(card.Suit);
+            _sb.Append("\n");
         }
     }
 }

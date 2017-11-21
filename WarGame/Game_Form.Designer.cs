@@ -51,8 +51,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.readmeLabel = new System.Windows.Forms.Label();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.player1Box.SuspendLayout();
             this.player2Box.SuspendLayout();
             this.menuStrip.SuspendLayout();
@@ -92,7 +92,7 @@
             this.player1Box.Size = new System.Drawing.Size(149, 121);
             this.player1Box.TabIndex = 4;
             this.player1Box.TabStop = false;
-            this.player1Box.Text = "Player 1 Cards";
+            this.player1Box.Text = "Player 1 Score";
             // 
             // p1Label
             // 
@@ -114,7 +114,7 @@
             this.player2Box.Size = new System.Drawing.Size(149, 121);
             this.player2Box.TabIndex = 5;
             this.player2Box.TabStop = false;
-            this.player2Box.Text = "Player 2 Cards";
+            this.player2Box.Text = "Player 2 Score";
             // 
             // p2Label
             // 
@@ -142,7 +142,7 @@
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
             this.newGameToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
@@ -150,7 +150,7 @@
             // 
             this.dankModeToolStripMenuItem.Name = "dankModeToolStripMenuItem";
             this.dankModeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.dankModeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dankModeToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.dankModeToolStripMenuItem.Text = "Dank Mode";
             this.dankModeToolStripMenuItem.Click += new System.EventHandler(this.dankModeToolStripMenuItem_Click);
             // 
@@ -158,7 +158,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -292,13 +292,6 @@
             this.panel3.Size = new System.Drawing.Size(320, 294);
             this.panel3.TabIndex = 11;
             // 
-            // vScrollBar2
-            // 
-            this.vScrollBar2.Location = new System.Drawing.Point(300, 0);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(16, 290);
-            this.vScrollBar2.TabIndex = 0;
-            // 
             // readmeLabel
             // 
             this.readmeLabel.AutoSize = true;
@@ -307,6 +300,13 @@
             this.readmeLabel.Size = new System.Drawing.Size(121, 26);
             this.readmeLabel.TabIndex = 1;
             this.readmeLabel.Text = "Go to \"Help\" for readme\r\nfile, or press F3.\r\n";
+            // 
+            // vScrollBar2
+            // 
+            this.vScrollBar2.Location = new System.Drawing.Point(300, 0);
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(16, 290);
+            this.vScrollBar2.TabIndex = 0;
             // 
             // Game_Form
             // 

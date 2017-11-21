@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +11,9 @@ namespace WarGame
     public class Player
     {
         public string Name { get; set; }
+        public Color NameColor { get; set; }
         public List<Card> Cards;
         public int PlayerScore { get; set; }
-
 
         // Constructor for how a Player should be.
         // A player has a list of Cards to be invoked in Deck 
@@ -20,6 +21,7 @@ namespace WarGame
         public Player()
         {
             Cards = new List<Card>();
+
         }
     }
 }
