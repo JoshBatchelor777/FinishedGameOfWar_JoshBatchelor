@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace WarGame
 {
+    // Cards have a suit and kind.
     public class Card
     {
         public string Suit { get; set; }
