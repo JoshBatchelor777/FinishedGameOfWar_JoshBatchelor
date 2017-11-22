@@ -36,8 +36,6 @@ namespace WarGame
             string[] kind = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "10",
                 "Jack", "Queen", "King", "Ace" }; // Numbers and Face cards and Ace.
 
-
-
             // Here a deck is constructed.
             // Do this for each of the 4 suits.
             foreach (var suits in suit)
@@ -50,15 +48,12 @@ namespace WarGame
             }
         }
 
-
         public bool didDealHappen = true;
 
         // Deal cards function to be called by "Deal" button.
         // A deal function should deal to players, so pass 2 instances of a Player.
-
         public string Deal(Player _player1, Player _player2)
         {
-
             // Maintain the count of cards.
             // While there are still cards in the deck, invoke what should
             // happen for each individual card.
@@ -70,12 +65,9 @@ namespace WarGame
             didDealHappen = true;
             return _sb.ToString();
         }
-
-        
-
         // A player should recieve a card, so make new instance of a Player.
         // And cards are being dealed so make new instance of Card.
-        private void dealCard(Player player)
+        public void dealCard(Player player)
         {
             // A new instance of Card is dealt. That new instance is a 
             // random Element in _deck, within range of the count of the deck
@@ -83,21 +75,12 @@ namespace WarGame
             // foreach statements above. 52 cards.
             Card card = _deck.ElementAt(_random.Next(_deck.Count));
             player.Cards.Add(card);
-            player.PlayerScore = player.Cards.Count;
-            //player.PlayerScore = 30;
             _deck.Remove(card);
-
 
             // Every time a card is added, print the suit and kind and who has the card.
             // Using a string builder saves me from having to tell this class what each
             // Label is.
-            // + " has the " + card.Kind + " of " + card.Suit + "\n");
-            _sb.Append(player.Name);  
-            _sb.Append(" has the ");
-            _sb.Append(card.Kind);
-            _sb.Append(" of ");
-            _sb.Append(card.Suit);
-            _sb.Append("\n");
+            _sb.Append(player.Name + " has the " + card.Kind + " of " + card.Suit + "\n");
         }
     }
 }

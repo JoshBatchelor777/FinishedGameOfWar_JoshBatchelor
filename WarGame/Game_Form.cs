@@ -43,50 +43,51 @@ namespace WarGame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            p1Label.Text = "0";
+            p2Label.Text = "0";
+            dealButton.Enabled = false;
+            activityLabel.Text = "Welcome to War!\n" + "Press the \"Deal\" button to begin.";
         }
 
-/* Button Group */
 
+        /* Button Group */
+
+
+        public bool getp1Win = false;
+        public bool getp2Win = false;
         // Play game button
         public void playButton_Click(object sender, EventArgs e)
         {
             // A play button should start the game after cards are dealt.
-
+            activityLabel.Text = "Begin Battle...";
+            // Player One whould be Blue, Player 2 should be Red.
+            Game game = new Game("Player 1", "Player 2");
+            gameResultLabel.Text = game.Play();
+            // Print Player's amount of Cards to correct score labels.
+            p1Label.Text = game._player1.Cards.Count.ToString();
+            p2Label.Text = game._player2.Cards.Count.ToString();
+            activityLabel.Text = game.GetResult;
         }
 
         // Deal cards to players
+        // Not being used.
         private void dealButton_Click(object sender, EventArgs e)
         {
+            /*
             // Disable the deal button once it is pressed.
             dealButton.Enabled = false;
 
             // Player One whould be Blue, Player 2 should be Red.
-            Game game = new Game("Player 1", Color.Blue,  "Player 2", Color.Red);
-
-
-            // This is so I can target precise strings and make them
-            // the color I want. 
-            // Curretnly Cannot override StringBuidler in Deck Class, I think.
-            var find1 = game._player1.Name;
-            var find2 = game._player2.NameColor;
-                foreach (var found1 in gameResultLabel.Text)
-                {
-                    //find1 = Color.Blue;
-                }
-                foreach (var found2 in gameResultLabel.Text)
-                {
-                    find2 = Color.Red;
-                }
-
-           // Color NameColor = Color.FromName("Red");
-
+            Game game = new Game("Player 1",  "Player 2");
             gameResultLabel.Text = game.Play();
 
+            p1Label.Text = game._player1.PlayerCards.ToString();
+            p2Label.Text = game._player2.PlayerCards.ToString();
 
-            p1Label.Text = game._player1.PlayerScore.ToString();
-            p2Label.Text = game._player2.PlayerScore.ToString();
-
-            activityLabel.Text += "Cards have been dealt. \n" + "Press \"Play\" to begin the game.";
+            if (dealButton.Enabled == false)
+                activityLabel.Text = "Cards have been dealt. \n" +
+                 "Press \"Play\" to begin the game.\n"+"Press F1 at any time to reset.";
+                 */
         }
 
         // Quit game button
@@ -94,6 +95,7 @@ namespace WarGame
         {
             Application.Exit();
         }
+
 
 /* Menu Strips */
         private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -106,15 +108,10 @@ namespace WarGame
         {
             // New Game Function: Clears all the labels.
             var result = "";
+            activityLabel.Text = result;
+            gameResultLabel.Text = result;
             p1Label.Text = result;
             p2Label.Text = result;
-            gameResultLabel.Text = result;
-            activityLabel.Text = result;
-        
-            result += "";
-
-            // Reset the deal button.
-            dealButton.Enabled = true;
         }
 
         // Some kind of crazy game mode, not yet implemented.

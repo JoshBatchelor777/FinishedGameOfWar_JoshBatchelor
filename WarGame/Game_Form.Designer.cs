@@ -242,7 +242,7 @@
             this.programDialogBox.Size = new System.Drawing.Size(223, 121);
             this.programDialogBox.TabIndex = 10;
             this.programDialogBox.TabStop = false;
-            this.programDialogBox.Text = "Program Dialog";
+            this.programDialogBox.Text = "Game Stats";
             // 
             // activityLabel
             // 
@@ -371,10 +371,10 @@
         private System.Windows.Forms.Label p2Label;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.GroupBox programDialogBox;
-        private System.Windows.Forms.Label activityLabel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.Label readmeLabel;
+        public System.Windows.Forms.Label activityLabel;
     }
 }
 
