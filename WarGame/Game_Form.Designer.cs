@@ -134,7 +134,7 @@
             this.dankModeToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
             // 
@@ -142,7 +142,7 @@
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
             this.newGameToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
@@ -150,7 +150,7 @@
             // 
             this.dankModeToolStripMenuItem.Name = "dankModeToolStripMenuItem";
             this.dankModeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.dankModeToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.dankModeToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.dankModeToolStripMenuItem.Text = "Dank Mode";
             this.dankModeToolStripMenuItem.Click += new System.EventHandler(this.dankModeToolStripMenuItem_Click);
             // 
@@ -158,7 +158,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -167,7 +167,7 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openReadmeToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // openReadmeToolStripMenuItem
@@ -175,7 +175,7 @@
             this.openReadmeToolStripMenuItem.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.openReadmeToolStripMenuItem.Name = "openReadmeToolStripMenuItem";
             this.openReadmeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
-            this.openReadmeToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.openReadmeToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.openReadmeToolStripMenuItem.Text = "Open Readme";
             this.openReadmeToolStripMenuItem.Click += new System.EventHandler(this.openReadmeToolStripMenuItem_Click);
             // 
@@ -206,7 +206,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.AutoScroll = true;
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.vScrollBar1);
             this.panel2.Controls.Add(this.gameResultLabel);
@@ -283,7 +283,7 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel3.AutoScroll = true;
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.readmeLabel);
             this.panel3.Controls.Add(this.vScrollBar2);
