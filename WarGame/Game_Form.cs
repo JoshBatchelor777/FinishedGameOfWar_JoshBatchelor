@@ -53,6 +53,7 @@ namespace WarGame
         /* Button Group */
 
 
+       // Does nothing.
         public bool getp1Win = false;
         public bool getp2Win = false;
         // Play game button

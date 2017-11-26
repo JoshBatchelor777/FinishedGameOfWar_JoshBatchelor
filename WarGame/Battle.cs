@@ -73,8 +73,8 @@ namespace WarGame
         private void War(Player player1, Player player2)
         {
             _sb.Append("\n" + "=======___WAR!___=======" + "\n");
-            // War Scenario dictates once two cards are the same,
-            // each player draws 2 cards, and a 3rd is also drawn then played.
+            // War Scenario dictates that when two cards are the same,
+            // each player draws 2 cards, and a 3rd is also drawn and played.
 
             // Get 3 cards, 1 of which is the warCard.
             getCard(player1);
