@@ -2,6 +2,10 @@
 The War card game done in C# using Windows Forms.
 
 
+****WARNING!****
+Due to various strange and unknown issues involving both Windows and Visual Studio 2015 / 2017,
+It is required of the user to first "Build", "Clean" and "Re-Build" the Solution before 
+running it. Thank you!
 
 =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=          	
 
